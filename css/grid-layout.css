@@ -1,0 +1,94 @@
+body {
+    max-width: 946px;
+    margin: auto;
+    background-image: url('../images/volcanic-cone-Japan-Mount-Fuji.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(60, 127, 148);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-content>div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header {
+    background-image: url('../images/website\ header.jpg');
+    background-repeat: repeat;
+    background-clip: border-box;
+    background-size: auto;
+    background-position: -250px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+}
+.menu {
+    position: relative;
+    height: 100px;
+}
+
+.menu nav {
+    position: absolute;
+    top: 45px;
+    left: 120px;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul > li {
+    float: left;
+    margin: 10px;
+}
+
+.header nav ul > li > a {
+    text-decoration: none;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px, rgb(0, 0, 0) 2px 5px 10px;
+}
+.item1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(133, 156, 68);
+    box-shadow: rgb(0, 0, 0) 5px 5px 5px;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    box-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    background-color: rgb(223, 57, 181);
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    box-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    background-color: rgb(250, 6, 6);
+    color: white;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px, rgb(0, 0, 0) 2px 5px 10px;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    box-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    background-color: rgb(24, 9, 238);
+    color: white;
+}
